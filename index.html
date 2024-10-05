@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Бронирование билетов в кинотеатр</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Бронирование билетов в кинотеатр</h1>
+
+    <div class="controls">
+      <label for="date-picker">Выберите дату:</label>
+      <input type="date" id="date-picker">
+    </div>
+
+    <div id="sessions-container">
+      <h2>Сеансы на выбранную дату</h2>
+      <div id="sessions">
+      </div>
+    </div>
+
+    <div id="seat-selection">
+      <h2>Выбор мест</h2>
+      <div id="seats">
+      </div>
+      <button id="reserve-btn" disabled>Забронировать</button>
+    </div>
+  </div>
+
+  <script src="index.js"></script>
+</body>
+</html>

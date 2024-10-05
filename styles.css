@@ -1,0 +1,80 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    padding: 20px;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1 {
+    text-align: center;
+  }
+  
+  .controls {
+    margin-bottom: 20px;
+  }
+  
+  #sessions {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .session {
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .session.archived {
+    background-color: #f0f0f0;
+    pointer-events: none;
+    cursor: not-allowed;
+  }
+  
+  #seats {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .seat {
+    width: 30px;
+    height: 30px;
+    margin: 5px;
+    background-color: #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .seat.booked {
+    background-color: #ff6b6b;
+    pointer-events: none;
+  }
+  
+  .seat.selected {
+    background-color: #4caf50;
+  }
+  
+  button {
+    padding: 10px 20px;
+    margin-top: 20px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  button:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+  }
+  
